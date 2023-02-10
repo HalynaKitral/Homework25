@@ -42,11 +42,11 @@
       "id": "7d0762b1-2216-4e64-9a4d-fa40df72a246",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.button--link:nth-child(2)",
+      "target": "xpath=//button[contains(.,'Реєстрація')]",
       "targets": [
         ["css=.button--link:nth-child(2)", "css:finder"],
-        ["xpath=(//button[@type='button'])[41]", "xpath:attributes"],
-        ["xpath=//div[@id='cdk-overlay-3']/nav/div/div[2]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
         ["xpath=//div[2]/div/button[2]", "xpath:position"],
         ["xpath=//button[contains(.,'Реєстрація')]", "xpath:innerText"]
       ],
@@ -55,20 +55,16 @@
       "id": "8a5b872a-cd74-47ea-a032-ca4037c5d3ae",
       "comment": "",
       "command": "click",
-      "target": "css=.button--link:nth-child(2)",
+      "target": "xpath=//button[contains(.,'Реєстрація')]",
       "targets": [
-        ["css=.button--link:nth-child(2)", "css:finder"],
-        ["xpath=(//button[@type='button'])[41]", "xpath:attributes"],
-        ["xpath=//div[@id='cdk-overlay-3']/nav/div/div[2]/div/div/div[2]/div/button[2]", "xpath:idRelative"],
-        ["xpath=//div[2]/div/button[2]", "xpath:position"],
-        ["xpath=//button[contains(.,'Реєстрація')]", "xpath:innerText"]
+        ["css=.header__button > .ng-tns-c109-1", "css:finder"]
       ],
       "value": ""
     }, {
       "id": "714ed142-f28d-46cb-987c-948f71fe54bf",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.modal__header",
+      "target": "xpath=//rz-single-modal-window/div[3]/div",
       "targets": [
         ["css=.modal__header", "css:finder"],
         ["xpath=//rz-single-modal-window/div[3]/div", "xpath:position"]
@@ -252,10 +248,14 @@
       "id": "b8733478-dbf3-4f0e-9bed-621c3ec4acac",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(4) .tile-cats",
+      "target": "linkText=Активний відпочинок і туризм",
       "targets": [
-        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(4) .tile-cats", "css:finder"],
-        ["xpath=//rz-widget-list[2]/section/ul/li[4]/rz-list-tile/div", "xpath:position"]
+        ["linkText=Активний відпочинок і туризм", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(4) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Активний відпочинок і туризм')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/outdoorsman/c81202/')])[2]", "xpath:href"],
+        ["xpath=//rz-widget-list[2]/section/ul/li[4]/rz-list-tile/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Активний відпочинок і туризм')]", "xpath:innerText"]
       ],
       "value": "30000"
     }, {
@@ -276,7 +276,7 @@
       "id": "028b4ad4-fc33-47c0-adbd-feceac4d244f",
       "comment": "",
       "command": "waitForElementPresent",
-      "target": "css=.portal-navigation__item:nth-child(1) .ng-lazyloaded",
+      "target": "xpath=//img[@alt='Туризм і кемпінг']",
       "targets": [
         ["css=.portal-navigation__item:nth-child(1) .ng-lazyloaded", "css:finder"],
         ["xpath=//img[@alt='Туризм і кемпінг']", "xpath:img"],
@@ -502,7 +502,7 @@
       "id": "c2b522f0-9602-484e-9492-a7f6d65a1677",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span",
+      "target": "xpath=//span[contains(.,'Купити')]",
       "targets": [
         ["css=.buy-button__label", "css:finder"],
         ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
@@ -514,10 +514,13 @@
       "id": "8aae75c9-9d03-4bb8-9b71-79b5284f9b39",
       "comment": "",
       "command": "verifyElementPresent",
-      "target": "css=.cart-product__main:nth-child(2)",
+      "target": "linkText=Килимок складаний IXPE Naturehike NH19QD008 алюмінієва плівка 16 мм Оливково-зелений (6927595794388)",
       "targets": [
-        ["css=.cart-product__main:nth-child(2)", "css:finder"],
-        ["xpath=//rz-cart-product/div/div/div", "xpath:position"]
+        ["linkText=Килимок складаний IXPE Naturehike NH19QD008 алюмінієва плівка 16 мм Оливково-зелений (6927595794388)", "linkText"],
+        ["css=.cart-product__main:nth-child(2) > .cart-product__title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Килимок складаний IXPE Naturehike NH19QD008 алюмінієва плівка 16 мм Оливково-зелений (6927595794388)')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/naturehike-6927595794388/p365352279/')])[3]", "xpath:href"],
+        ["xpath=//rz-cart-product/div/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -650,7 +653,7 @@
       "id": "140361c9-3d3e-4e3e-bcc5-9025fc926698",
       "comment": "",
       "command": "click",
-      "target": "css=.catalog-grid__cell:nth-child(1) .goods-tile__title",
+      "target": "xpath=//span[contains(.,'Музичний інструмент \"Шейкер\"')]",
       "targets": [
         ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
         ["xpath=//a[2]/span", "xpath:position"],
@@ -658,29 +661,57 @@
       ],
       "value": ""
     }, {
-      "id": "428fef82-6057-4957-bdd0-fd0a188c0d91",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.buy-button__label",
-      "targets": [
-        ["css=.buy-button__label", "css:finder"],
-        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
-        ["xpath=//button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "cb9d7d3a-e354-4028-82a3-398abf344f0f",
       "comment": "",
       "command": "click",
-      "target": "css=.buy-button__label",
+      "target": "linkText=Характеристики",
       "targets": [
-        ["css=.buy-button__label", "css:finder"],
-        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
-        ["xpath=//button/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+        ["linkText=Характеристики", "linkText"],
+        ["css=.tabs__item:nth-child(2) > .tabs__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Характеристики')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/363703065/p363703065/characteristics/')]", "xpath:href"],
+        ["xpath=//rz-tabs/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Характеристики')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "d9cd0360-09f2-4f9c-9eba-c9510ba247ef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Залишити відгук')])[2]",
+      "targets": [
+        ["css=.tabs__item:nth-child(3) > .tabs__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Залишити відгук')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/363703065/p363703065/comments/')])[2]", "xpath:href"],
+        ["xpath=//div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "280aae73-1d74-43f4-ba6c-d1e2dd20bf7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=dostoinstva",
+      "targets": [
+        ["id=dostoinstva", "id"],
+        ["name=dignity", "name"],
+        ["css=#dostoinstva", "css:finder"],
+        ["xpath=//input[@id='dostoinstva']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab26f176-cf05-43f9-bd9c-b5c20d8cc651",
+      "comment": "",
+      "command": "type",
+      "target": "id=dostoinstva",
+      "targets": [
+        ["id=dostoinstva", "id"],
+        ["name=dignity", "name"],
+        ["css=#dostoinstva", "css:finder"],
+        ["xpath=//input[@id='dostoinstva']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "В мене все працює)"
     }]
   }],
   "suites": [{
